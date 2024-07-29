@@ -13,7 +13,7 @@ import { Menu, MoveRight, X } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
 
-export const Header1 = () => {
+export default function Header() {
 const navigationItems = [
     {
     title: "Home",
@@ -21,30 +21,34 @@ const navigationItems = [
     description: "",
     },
     {
-    title: "Product",
-    description: "Managing a small business today is already tough.",
+    title: "Career Paths",
+    description: "If you don't know what career is best fit for you book our free consultation call",
     items: [
         {
-        title: "Reports",
+        title: "Writing",
         href: "/reports",
         },
         {
-        title: "Statistics",
+        title: "Programming",
         href: "/statistics",
         },
         {
-        title: "Dashboards",
+        title: "Sales",
         href: "/dashboards",
         },
         {
-        title: "Recordings",
+        title: "Marketing",
+        href: "/recordings",
+        },
+        {
+        title: "Marketing",
         href: "/recordings",
         },
     ],
     },
     {
-    title: "Company",
-    description: "Managing a small business today is already tough.",
+    title: "Resources",
+    description: "We help you kick start your careers.",
     items: [
         {
         title: "About us",
@@ -96,7 +100,7 @@ return (
                             </p>
                             </div>
                             <Button size="sm" className="mt-10">
-                            Book a call today
+                             Book a Free today
                             </Button>
                         </div>
                         <div className="flex flex-col text-sm h-full justify-end">
@@ -121,15 +125,12 @@ return (
         </NavigationMenu>
         </div>
         <div className="flex lg:justify-center">
-        <p className="font-semibold">TWBlocks</p>
+        <p className="font-semibold text-2xl">Rookiez</p>
         </div>
         <div className="flex justify-end w-full gap-4">
-        <Button variant="ghost" className="hidden md:inline">
-            Book a demo
-        </Button>
         <div className="border-r hidden md:inline"></div>
         <Button variant="outline">Sign in</Button>
-        <Button>Get started</Button>
+        <Button>Book a free call</Button>
         </div>
         <div className="flex w-12 shrink lg:hidden items-end justify-end">
         <Button variant="ghost" onClick={() => setOpen(!isOpen)}>
@@ -174,4 +175,3 @@ return (
     </header>
 );
 };
-Close

@@ -1,8 +1,12 @@
+import React from 'react'
 import Headers from "@/app/components/Headers";
-import Image from "next/image";
+import { Hero1 } from './components/Hero';
 
 export default function Home() {
   return (
-      <Headers />
-  );
+    <>
+    <Headers/>
+    <Hero1/>
+    </>
+  )
 }
